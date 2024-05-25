@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap%27');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body, html{
+    background: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 20px; 
+    border: 3px solid #000;
+}
+
+input{
+    border: 0;
+    border-bottom: 2px solid #000;
+    padding: 2px;
+    background: transparent;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+button{
+    background: #fff;
+    font-size: 14px;
+    width: 140px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    transition: all 0.2s;
+    margin: 8px;
+}
+
+.Clean:hover, .Primary:hover, .Colaboration:hover, .End:hover, .Copy:hover, .Back:hover {
+    background: #4a4848;
+}
+
+.container{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container strong{
+    color: white;
+    text-shadow: 
+               -1px -1px 0px #000, 
+               -1px 1px 0px #000,                    
+                1px -1px 0px #000,                  
+                1px 0px 0px #000;
+}
+
+.container2{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 75%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 30px;
+    width: 500px;
+    height: 500px;
+}
+
+.discordIcon{
+    position: absolute;
+    left: 87%;
+    bottom: 5%;
+    width: 30px;
+    height: 25px;
+}
+
+.List01, .List02, .List03, .List04, .List05, .List06 {
+    background: rgba(80, 162, 255, 1);
+    padding: 12px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.List02 {
+    background: #41d054;
+}
+
+.List03{
+    background: #f0c808;
+    
+}
+
+.List04{
+    background: #dd751a;
+}
+
+.List05{
+    background: #dd1c1a;
+}
+
+.List06{
+    background: #580af4;
+}
+
+.Finished{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Back, .Copy{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.Copy{
+    top: 60%;
+    left: 50%;
+}
+
+button{
+    cursor: pointer;
+}
+
+.List01:hover{
+    background: rgba(158, 211, 255, 0.8);
+}
+
+.List02:hover{
+    background: rgba(190, 255, 207, 0.8);
+}
+
+.List03:hover{
+    background: rgba(255, 254, 173, 0.8);
+}
+
+.List04:hover{
+    background: rgba(255, 144, 75, 0.8);
+}
+
+.List05:hover{
+    background: rgba(255, 75, 75, 0.8);
+}
+
+.List06:hover{
+    background: rgba(138, 3, 248, 0.914);
+}

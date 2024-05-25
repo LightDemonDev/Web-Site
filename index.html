@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightDemonDev Site</title>
+    <link rel="icon" type="image/png" href="assets/lightdemon.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./jquery.js"></script>
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="navbar">
+      <!--<a href="./index.html"><img class="desktop_navbar_logo_img" src="./assets/" alt="logo"></a>-->
+      <a href="./index.html" class="desktop_navbar_link">LightDemonDev Access</a>
+      <div class="desktop_navbar_link2_div">
+          <a href="#about" class="desktop_navbar_link2 scroll">Descobrir</a>
+      </div>
+    </nav>
+    <div class="mainflex">
+      <div class="main1">
+        <div class="main1_description">
+          <a>Olá, seja bem-vindo ao meu site! Abaixo, <br> você encontrará sistemas disponíveis para uso <br></a>
+          <a class="main1_actcent">GRATUITO</a>
+        </div>
+        <a href="#more" class="scroll">
+          <img alt="downarrow" class="main1_downarrow" src="./assets/downarrow.png">
+        </a>
+        <script>
+          const scrollLinks = document.querySelectorAll('.scroll');
+          scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            });
+          });
+        </script>
+      </div>
+      <div id="more"></div>
+      <div class="main2">
+        <a class="headline">Meus Projetos</a>
+        <div class="main2_features_div">
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Calculadora Penal" src="./assets/calcultor.jpg">
+            <a class="main2_feature_headline">Calculadora Penal</a>
+            <a class="main2_feature_text">Faça rapidamente uma ficha criminal!</a>
+            <a href="./others/calculator.html" class="main4_dc_button_a">
+              <div class="main4_dc_button">Acessar</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="partner"></div>
+      <div class="main4">
+        <a class="headline">Parceiros</a>
+        <div class="main4_dc_div">
+          <iframe class="main4_dc_widget" src="./assets/fury.png" width="400" height="400" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <div class="main4_dc_description_div">
+            <a class="main4_dc_description_title">Fury Roleplay</a>
+            <a class="main4_dc_description"> A melhor cidade de <br> Roleplay do fivem. <br> <br> Venha conhecer e <br> se divertir conosco!</a>
+            <a href="https://discord.gg/furyrp" class="main4_dc_button_a">
+              <div class="main4_dc_button">Entrar</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="about"></div>
+      <div class="main5">
+        <a class="headline">Quem sou eu?</a>
+        <div class="main5_admin_div">
+          <div class="main5_admins_div main5_admins_dev_type2">
+            <img class="main5_admins_img" alt="admin member img" src="./assets/lightdemon.png">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_title" href="./index.html">LightDemon</a>
+              <a class="main5_admins_description">Olá, eu sou LightDemon, o criador <br> deste site. Fiz este site com o <br> intuito de ajudar a Fury RP <br> com os sistemas policiais. <br> <br> Não desenvolvo sistemas/sites <br> para terceiros!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
